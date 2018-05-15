@@ -50,7 +50,7 @@ program igrf_test
 
         call igrf12syn(0, date, 2, r, colat, elong, x, y, z, f)
 
-        write(1,"(F10.1 F10.2 F10.2 F10.2 F10.2 F10.2 F10.2 F10.2)") date, r, colat, elong, x, y, z, f
+        write(1,"(F9.1 F10.2 F8.2 F9.2 F15.5 F15.5 F15.5 F15.5)") date, r, colat, elong, x, y, z, f
 
         ! Geodetic coordinates
         ! ====================
@@ -58,7 +58,7 @@ program igrf_test
 
         call igrf12syn(0, date, 1, h, colat, elong, x, y, z, f)
 
-        write(2,"(F10.1 F10.2 F10.2 F10.2 F10.2 F10.2 F10.2 F10.2)") date, h, colat, elong, x, y, z, f
+        write(2,"(F9.1 F10.2 F8.2 F9.2 F15.5 F15.5 F15.5 F15.5)") date, h, colat, elong, x, y, z, f
     end do
 
 end program igrf_test
