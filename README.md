@@ -14,4 +14,5 @@ The file for geodetic coordinates have the following structure:
 
     date, altitude, colatitude, East-logintude, X [nT], Y [nT], Z [nT], f [nT]
 
-Obs.: The input argument units are the same as in `igrf12syn` function.
+Obs.: The input argument units are the same as in `igrfXXsyn` function, where
+`XX` is the IGRF version.
