@@ -43,7 +43,7 @@ program igrf_test
         ! Geocentric coordinates
         ! ======================
 
-        date  = real(nint( (1900.0_dp + (2025.0_dp - 1900.0_dp)*rand())*10 ) )/10
+        date  = real(nint( (1900.0_dp + (2030.0_dp - 1900.0_dp)*rand())*10 ) )/10
         r     = real(nint( (6400.0_dp + (8000.0_dp - 6400.0_dp)*rand())*100) )/100
         colat = real(nint( (0.0_dp +  90.0_dp*rand())*100) )/100
         elong = real(nint( (0.0_dp + 360.0_dp*rand())*100) )/100
